@@ -1,0 +1,13 @@
+job('ds description job') {
+  
+  description('My first job')
+  
+  scm {
+        github('master' , 'code-sourabh/jenkins-project2')
+    }
+	
+  steps {
+  
+  shell ('date')
+  }    
+}
